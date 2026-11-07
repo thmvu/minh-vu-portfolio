@@ -10,8 +10,8 @@ Global constraints: preserve all existing projects; use verified facts; no secre
 
 Review focus: blocked browser storage, invalid saved locale, missing translations, mobile navigation, missing assets and broken anchor destinations.
 
-- [ ] Write language/content contract tests, observe initial failure, then implement complete bilingual content.
-- [ ] Build the portfolio and shared visual system; keep Vietnamese HTML useful without JavaScript.
-- [ ] Add portable preview/build commands and GitHub Pages workflow; run Node tests and build.
-- [ ] Run browser layout/consistency/performance checks, inspect desktop/mobile screenshots, fix material issues.
-- [ ] Review source, create a new GitHub repository, push the verified commit, and verify remote state.
+- [x] Write language/content contract tests, observe initial failure, then implement complete bilingual content.
+- [x] Build the dark AI/ML/CV portfolio with an original point-cloud hand and six project entries; keep Vietnamese HTML useful without JavaScript.
+- [x] Add portable preview/build commands and GitHub Pages workflow; run Node tests and build.
+- [x] Run browser layout/consistency/performance checks, inspect desktop/mobile screenshots, fix material issues. See verification.md for intentional checker exceptions.
+- [x] Review source independently, resolve shader portability issue, create a new GitHub repository, push the verified commit, and verify remote state.

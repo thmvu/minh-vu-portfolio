@@ -22,3 +22,4 @@
 @media(hover:hover) and (pointer:fine){.project-card:hover .project-scan{animation:scan 3.2s linear 1}}
 @media(max-width:800px){.hero{height:auto;min-height:100svh;max-height:none}.hero-content{min-height:100svh;height:auto;grid-template-rows:auto minmax(320px,1fr) auto}}
 @media(max-width:600px){.hero-content{grid-template-rows:auto minmax(260px,1fr) auto}}
+.language span{color:var(--muted)}
