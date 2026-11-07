@@ -1,0 +1,15 @@
+# Verification record
+
+2026-11-08. The current scope is the user-directed dark AI/ML/CV revision in design.md.
+
+- `npm test`: 5 passed.
+- `npm run test:browser`: 17 passed, no uncaught page errors. Google Chrome headless with software WebGL.
+- Browser sizes: 1440×900, 1024×768, 820×1180, 768×1024, 390×844; additional 320px enlarged-text stress case.
+- Verified project filters, VI/EN persistence, role attribution, unknown project ID handling, keyboard controls, pause/reset, mobile navigation/Escape, visible fallback, disabled WebGL, context loss/restoration, blocked storage, JavaScript-disabled source links and 4× CPU-throttled mobile emulation.
+- Manually inspected desktop and mobile screenshots. Browser screenshots eagerly decode lazy images before capture so below-fold assets are not mistaken for empty artwork.
+- `npm run build`: all local HTML assets resolve; 22 deployable files, approximately 381 KiB uncompressed. No runtime npm dependencies.
+- The taste performance run measured approximately 171 KiB transfer with no broken requests, one WebGL context desktop and none mobile before activation. Its icon lazy-loading finding was fixed. The SVG scaling warning is not a raster-quality defect; vectors remain resolution independent. The shared precision-recall PNG is also used in the full-size project detail.
+- Taste layout checker was run at all five sizes. It flags natural gallery height and section heights because it requires exactly one/two screens and a specific 12-column scaffold. The user explicitly requested a filterable project gallery; natural height, a two-column project grid and a full about section are intentional departures, avoiding clipped content. Narrow hero height now expands for larger text rather than hiding controls. Outer container edges remain equal.
+- Independent final code review found one portability issue: reversed GLSL smoothstep edges. It was corrected to `1.0-smoothstep(.13,.5,d)` before publication. BFCache lifecycle and context-restoration checks were also strengthened.
+
+Physical low-powered hardware and non-Chromium GPU drivers were not available; throttled mobile testing is a simulation, not a physical-device certification. No GLB/third-party model or video is used, so there is no missing-model or unapproved-video dependency.
