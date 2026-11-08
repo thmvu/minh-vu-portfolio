@@ -2,6 +2,8 @@
 
 Personal portfolio for Từ Hữu Minh Vũ, focused on machine learning, computer vision, AI agent research, and full-stack software systems.
 
+Live website: [https://thmvu.github.io/minh-vu-portfolio/](https://thmvu.github.io/minh-vu-portfolio/)
+
 ## Run
 
 Requires Node.js 22 or later. The website has no runtime dependencies.
