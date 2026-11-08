@@ -13,7 +13,7 @@ if (path.dirname(output) !== root || path.basename(output) !== 'dist') {
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
-const files = ['index.html', 'project.html', 'styles.css', 'app.js', 'content.js', 'hand.js', 'hand-data.js'];
+const files = ['index.html', 'project.html', 'googled70cab15646ffbb0.html', 'styles.css', 'app.js', 'content.js', 'hand.js', 'hand-data.js'];
 for (const file of files) await cp(file, path.join(output, file));
 await cp('assets', path.join(output, 'assets'), { recursive: true });
 
